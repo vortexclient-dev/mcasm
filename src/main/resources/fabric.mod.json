@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "mcasm",
+  "version": "${version}",
+  "name": "mcasm",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/vortexclient-dev/mcasm"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/mcasm/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.vortexclient.mcasm.client.MCASMClient"
+    ]
+  },
+  "mixins": [
+    "mcasm.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
